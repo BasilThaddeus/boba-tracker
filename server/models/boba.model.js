@@ -53,6 +53,16 @@ const BobaSchema = mongoose.Schema(
 			type: Number,
 			required: true,
 		},
+
+		comments: {
+			type: Array,
+			required: false,
+		},
+
+		reactions: {
+			type: Array,
+			required: false,
+		},
 	},
 	{
 		timestamps: true,

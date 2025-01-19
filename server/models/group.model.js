@@ -17,11 +17,6 @@ const GroupSchema = mongoose.Schema(
 			required: true,
 		},
 
-		bobas: {
-			type: Array,
-			required: false,
-		},
-
 		groupPFP: {
 			type: String,
 			required: false,

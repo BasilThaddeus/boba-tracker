@@ -20,7 +20,7 @@ const UserSchema = mongoose.Schema(
 
 		bobas: {
 			type: Array,
-			default: false,
+			required: false,
 		},
 
 		groups: {

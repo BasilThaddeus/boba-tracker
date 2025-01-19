@@ -4,30 +4,54 @@ const mongoose = require("mongoose");
 
 const BobaSchema = mongoose.Schema(
 	{
-		email: {
+		month: {
 			type: String,
 			required: true,
 		},
 
-		username: {
+		day: {
+			type: Number,
+			required: true,
+		},
+
+		store: {
 			type: String,
 			required: true,
 		},
 
-		pfp: {
+		drink: {
+			type: String,
+			required: true,
+		},
+
+		toppings: {
+			type: Array,
+			required: false,
+		},
+
+		drinkName: {
 			type: String,
 			required: false,
-			default: "default.png",
 		},
 
-		bobas: {
-			type: Array,
-			default: false,
-		},
-
-		groups: {
+		friends: {
 			type: Array,
 			required: false,
+		},
+
+		cost: {
+			type: Number,
+			required: true,
+		},
+
+		size: {
+			type: String,
+			required: true,
+		},
+
+		rating: {
+			type: Number,
+			required: true,
 		},
 	},
 	{
